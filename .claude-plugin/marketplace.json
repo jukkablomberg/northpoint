@@ -8,18 +8,5 @@
     "name": "Jukka Blomberg",
     "url": "https://northpoint.fi"
   },
-  "plugins": [
-    {
-      "name": "crypto-cmo-ai-stack",
-      "displayName": "Crypto CMO AI Stack",
-      "description": "The AI marketing stack and judgment layer used to run crypto marketing solo.",
-      "source": "./skills/crypto-cmo-ai-stack"
-    },
-    {
-      "name": "mica-marketing-self-audit",
-      "displayName": "MiCA Marketing Self-Audit",
-      "description": "40-rule operator-grade checklist for MiCA-compliant crypto marketing.",
-      "source": "./skills/mica-marketing-self-audit"
-    }
-  ]
+  "plugins": []
 }
