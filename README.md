@@ -4,12 +4,50 @@ Open playbooks from [NorthPoint](https://northpoint.fi) — exchange-grade crypt
 
 This repository is a skills marketplace: the operator-grade checklists, prompt libraries, and judgment rules that NorthPoint uses internally, published openly.
 
+## Install
+
+Install everything (both skills):
+
+```
+npx skills add jukkablomberg/northpoint
+```
+
+Or install a specific skill:
+
+```
+npx skills add jukkablomberg/northpoint --skill crypto-cmo-ai-stack
+npx skills add jukkablomberg/northpoint --skill mica-marketing-self-audit
+```
+
+List what's in the marketplace before installing:
+
+```
+npx skills add jukkablomberg/northpoint --list
+```
+
+### Claude Code plugin install
+
+For Claude Code users specifically:
+
+```
+/plugin marketplace add jukkablomberg/northpoint
+/plugin install crypto-cmo-ai-stack
+/plugin install mica-marketing-self-audit
+```
+
 ## Skills
 
-> **Note (2026-06-24):** the previously published skills — `crypto-cmo-ai-stack` and
-> `mica-marketing-self-audit` — have been **deprecated and removed**. No skills are currently
-> published in this marketplace. Check back, or see [northpoint.fi](https://northpoint.fi) for
-> NorthPoint's current offerings.
+### `crypto-cmo-ai-stack`
+
+The tools and judgment layer we actually use to run crypto marketing solo. The stack, the rules we apply on top, and what we deliberately don't use AI for. Exchange-grade opinions, compressed.
+
+→ [Skill source](./skills/crypto-cmo-ai-stack/SKILL.md)
+
+### `mica-marketing-self-audit`
+
+A 40-rule operator-grade checklist for MiCA-compliant crypto marketing. Runs a draft ad, landing page, influencer brief, email, or promo creative against the forty rules before it ships to EU markets. Works as a human checklist or a system prompt for an LLM.
+
+→ [Skill source](./skills/mica-marketing-self-audit/SKILL.md)
 
 ## About NorthPoint
 
