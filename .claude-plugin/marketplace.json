@@ -2,7 +2,7 @@
   "$schema": "https://claude.com/schemas/marketplace.json",
   "name": "northpoint",
   "displayName": "NorthPoint",
-  "description": "Exchange-grade crypto marketing playbooks from NorthPoint.",
+  "description": "Crypto marketing compliance rule packs and playbooks from NorthPoint. Free, MIT.",
   "homepage": "https://northpoint.fi",
   "author": {
     "name": "Jukka Blomberg",
@@ -10,16 +10,70 @@
   },
   "plugins": [
     {
-      "name": "crypto-cmo-ai-stack",
-      "displayName": "Crypto CMO AI Stack",
-      "description": "The AI marketing stack and judgment layer used to run crypto marketing solo.",
-      "source": "./skills/crypto-cmo-ai-stack"
+      "name": "mica-marketing-self-audit-pro",
+      "displayName": "MiCA Marketing Self-Audit Pro",
+      "description": "EU marketing under MiCA Title II\u2013IV + ESMA guidance, with interpretive notes and rewrites.",
+      "source": "./skills/mica-marketing-self-audit-pro"
+    },
+    {
+      "name": "fca-financial-promotions-pro",
+      "displayName": "FCA Financial Promotions Pro",
+      "description": "UK financial promotions: s21 FSMA, COBS 4.12A, PERG 8, the Oct-2023 cryptoasset regime.",
+      "source": "./skills/fca-financial-promotions-pro"
+    },
+    {
+      "name": "gdpr-marketing-self-audit-pro",
+      "displayName": "GDPR Marketing Self-Audit Pro",
+      "description": "GDPR + ePrivacy for marketing: consent, cookie banners, forms, automation flows.",
+      "source": "./skills/gdpr-marketing-self-audit-pro"
+    },
+    {
+      "name": "sec-retail-communications-pro",
+      "displayName": "SEC Retail Communications Pro",
+      "description": "US retail communications: Howey, s17(a), Rule 10b-5, s17(b) anti-touting.",
+      "source": "./skills/sec-retail-communications-pro"
+    },
+    {
+      "name": "mas-marketing-self-audit-pro",
+      "displayName": "MAS Marketing Self-Audit Pro",
+      "description": "Singapore DPT marketing under the Payment Services Act and MAS PS-G02.",
+      "source": "./skills/mas-marketing-self-audit-pro"
+    },
+    {
+      "name": "vara-marketing-self-audit-pro",
+      "displayName": "VARA Marketing Self-Audit Pro",
+      "description": "Dubai/UAE promotions under the VARA Marketing Regulations 2023 and the Rulebooks.",
+      "source": "./skills/vara-marketing-self-audit-pro"
+    },
+    {
+      "name": "tge-launch-readiness-pro",
+      "displayName": "TGE Launch Readiness Pro",
+      "description": "One multi-jurisdiction pass over a token-launch surface: EU, UK, US, SG, UAE.",
+      "source": "./skills/tge-launch-readiness-pro"
+    },
+    {
+      "name": "ad-creative-compliance-pro",
+      "displayName": "Ad Creative Compliance Pro",
+      "description": "The visual layer: disclosure prominence, dark patterns, fake UI, platform and app-store bans.",
+      "source": "./skills/ad-creative-compliance-pro"
+    },
+    {
+      "name": "aeo-visibility-audit-pro",
+      "displayName": "AEO / GEO Visibility Audit Pro",
+      "description": "Whether AI answer engines cite you when asked about your category \u2014 and what is stopping them.",
+      "source": "./skills/aeo-visibility-audit-pro"
     },
     {
       "name": "mica-marketing-self-audit",
       "displayName": "MiCA Marketing Self-Audit",
-      "description": "40-rule operator-grade checklist for MiCA-compliant crypto marketing.",
+      "description": "The pre-flight checklist version of the MiCA rules \u2014 pass/fail per rule, no interpretive notes.",
       "source": "./skills/mica-marketing-self-audit"
+    },
+    {
+      "name": "crypto-cmo-ai-stack",
+      "displayName": "Crypto CMO AI Stack",
+      "description": "The tools used to run crypto marketing solo, the judgment layer on top, and what not to use AI for.",
+      "source": "./skills/crypto-cmo-ai-stack"
     }
   ]
 }
