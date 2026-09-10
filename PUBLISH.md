@@ -79,3 +79,26 @@ northpoint/
 Both installation paths read the same tree: the `vercel-labs/skills` CLI spec discovers
 any directory under `skills/` holding a valid `SKILL.md`, and the Claude Code plugin
 marketplace spec reads `.claude-plugin/marketplace.json`.
+
+## Before you commit a pack change — `--check`
+
+```bash
+node scripts/gen-citation.mjs           # regenerate CITATION.cff
+node scripts/gen-citation.mjs --check   # exit 1 if anything disagrees
+```
+
+`CITATION.cff` is what GitHub's "Cite this repository" button and every reference
+manager read; it is GENERATED from the packs, never typed. `--check` refuses when:
+
+- a `SKILL.md` states a rule count the README table contradicts,
+- a pack exists in `skills/` but not in the README table, or the reverse,
+- a pack is published under a licence other than MIT,
+- `CITATION.cff` is missing or stale.
+
+A rule count is read from the pack itself — its `# Title — N Rules` heading, or an
+`N-rule` phrase in its description. A pack that states neither (`crypto-cmo-ai-stack`
+is one) is reported as uncounted and its README cell is not enforced, because
+inventing a number for it is exactly the hand-typing this check exists to stop.
+
+The site repo runs this same script in its test suite, so a drift here turns
+`npm test` red over there too.

@@ -1,0 +1,92 @@
+cff-version: 1.2.0
+message: "If you use these rule packs, please cite them as below."
+title: "NorthPoint compliance skill packs"
+abstract: >-
+  11 operator-grade marketing-compliance rule packs published as plain
+  Markdown SKILL.md files, 307 rules across 10 counted packs.
+  Information, not legal advice.
+type: dataset
+authors:
+  - name: "NorthPoint Marketing Solutions Oy"
+    website: "https://northpoint.fi"
+  - family-names: Blomberg
+    given-names: Jukka
+license: MIT
+version: "2026-09-03"
+date-released: "2026-09-03"
+url: "https://northpoint.fi/skills"
+repository-code: "https://github.com/jukkablomberg/northpoint"
+keywords:
+  - crypto marketing
+  - regulatory compliance
+  - MiCA
+  - GDPR
+  - financial promotions
+  - agent skills
+references:
+  - type: data
+    title: "Ad Creative Compliance Pro"
+    abbreviation: "ad-creative-compliance-pro"
+    notes: "32 rules (from its h1)"
+    url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/ad-creative-compliance-pro/SKILL.md"
+    license: MIT
+  - type: data
+    title: "AEO / GEO Visibility Audit Pro"
+    abbreviation: "aeo-visibility-audit-pro"
+    notes: "12 rules (from its h1)"
+    url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/aeo-visibility-audit-pro/SKILL.md"
+    license: MIT
+  - type: data
+    title: "crypto-cmo-ai-stack"
+    abbreviation: "crypto-cmo-ai-stack"
+    notes: "rule count not stated by the pack"
+    url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/crypto-cmo-ai-stack/SKILL.md"
+    license: MIT
+  - type: data
+    title: "FCA Financial Promotions Self-Audit Pro"
+    abbreviation: "fca-financial-promotions-pro"
+    notes: "25 rules (from its h1)"
+    url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/fca-financial-promotions-pro/SKILL.md"
+    license: MIT
+  - type: data
+    title: "GDPR Marketing Self-Audit Pro"
+    abbreviation: "gdpr-marketing-self-audit-pro"
+    notes: "30 rules (from its h1)"
+    url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/gdpr-marketing-self-audit-pro/SKILL.md"
+    license: MIT
+  - type: data
+    title: "MAS Marketing Self-Audit Pro"
+    abbreviation: "mas-marketing-self-audit-pro"
+    notes: "37 rules (from its h1)"
+    url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/mas-marketing-self-audit-pro/SKILL.md"
+    license: MIT
+  - type: data
+    title: "mica-marketing-self-audit"
+    abbreviation: "mica-marketing-self-audit"
+    notes: "40 rules (from its description)"
+    url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/mica-marketing-self-audit/SKILL.md"
+    license: MIT
+  - type: data
+    title: "MiCA Marketing Self-Audit Pro"
+    abbreviation: "mica-marketing-self-audit-pro"
+    notes: "40 rules (from its h1)"
+    url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/mica-marketing-self-audit-pro/SKILL.md"
+    license: MIT
+  - type: data
+    title: "SEC Retail Communications Self-Audit Pro"
+    abbreviation: "sec-retail-communications-pro"
+    notes: "25 rules (from its h1)"
+    url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/sec-retail-communications-pro/SKILL.md"
+    license: MIT
+  - type: data
+    title: "TGE Launch Readiness Audit Pro"
+    abbreviation: "tge-launch-readiness-pro"
+    notes: "28 rules (from its h1)"
+    url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/tge-launch-readiness-pro/SKILL.md"
+    license: MIT
+  - type: data
+    title: "VARA Marketing Self-Audit Pro"
+    abbreviation: "vara-marketing-self-audit-pro"
+    notes: "38 rules (from its h1)"
+    url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/vara-marketing-self-audit-pro/SKILL.md"
+    license: MIT
