@@ -1,0 +1,36 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "EU",
+      "description": "MiCA and GDPR/ePrivacy marketing rules.",
+      "skills": ["mica-marketing-self-audit-pro", "mica-marketing-self-audit", "gdpr-marketing-self-audit-pro"]
+    },
+    {
+      "title": "UK",
+      "description": "FCA financial promotions for cryptoassets.",
+      "skills": ["fca-financial-promotions-pro"]
+    },
+    {
+      "title": "US",
+      "description": "SEC retail communications.",
+      "skills": ["sec-retail-communications-pro"]
+    },
+    {
+      "title": "Singapore & Dubai",
+      "description": "MAS and VARA marketing rules.",
+      "skills": ["mas-marketing-self-audit-pro", "vara-marketing-self-audit-pro"]
+    },
+    {
+      "title": "Launch & creative",
+      "description": "Token-launch readiness and cross-jurisdiction ad creative.",
+      "skills": ["tge-launch-readiness-pro", "ad-creative-compliance-pro"]
+    },
+    {
+      "title": "Visibility & method",
+      "description": "Answer-engine visibility and the crypto-CMO AI stack.",
+      "skills": ["aeo-visibility-audit-pro", "crypto-cmo-ai-stack"]
+    }
+  ]
+}
