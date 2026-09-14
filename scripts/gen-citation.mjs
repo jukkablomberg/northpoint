@@ -199,7 +199,16 @@ function check() {
     if (version === null && m && renderCff(packs, m[1]) === have) {
       console.log('note: git unavailable — version re-check used the committed CITATION.cff version; content verified.');
     } else {
-      problems.push('CITATION.cff is stale — re-run `node scripts/gen-citation.mjs`');
+      /* Name the first differing line — a bare "stale" hid a machine-local
+         false RED for 4 days (2026-09-10..14) because nothing said WHAT
+         differed where. */
+      const H = have.split('\n'), W = want.split('\n');
+      let i = 0;
+      while (i < H.length && i < W.length && H[i] === W[i]) i++;
+      problems.push(
+        'CITATION.cff is stale — re-run `node scripts/gen-citation.mjs` ' +
+        `(first difference, line ${i + 1}: committed ${JSON.stringify(H[i] ?? '<EOF>')} vs generated ${JSON.stringify(W[i] ?? '<EOF>')}; git version read: ${JSON.stringify(version)})`
+      );
     }
   }
 
