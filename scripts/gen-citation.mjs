@@ -89,16 +89,48 @@ export function readPacks() {
     });
 }
 
-/** The tree's version is the date the packs last changed — not a typed string. */
+/**
+ * The tree's version is the date the packs last changed — not a typed string.
+ *
+ * [NP-CITATION-OLDGIT-PLACEHOLDER · 2026-09-15] WHY THIS IS NOT `%cs`.
+ *
+ * `%cs` (short committer date) was added in git 2.21. An OLDER git does not
+ * error on it — it echoes the placeholder back LITERALLY, so this function
+ * returned the four-character string "%cs". That is not null, so the
+ * git-unavailable fallback below (NP-CITATION-GIT-RACE) never fired; instead
+ * `renderCff` embedded "%cs" as the version, `--check` compared it against the
+ * committed "2026-09-03" and reported CITATION.cff STALE on content that was
+ * byte-identical. Since tests/public-skills-citation.test.mjs in the northpoint
+ * site repo runs this guard in its pre-push suite, that false RED blocked EVERY
+ * northpoint push from 2026-09-14 14:08 onward — the suite was green on any
+ * machine with a modern git and red only on the publishing checkout, which is
+ * exactly the shape that made it undiagnosable for four days.
+ *
+ * Two changes, and the second is the load-bearing one:
+ *   1. `%cI` (ISO-8601 strict, git >= 2.2) sliced to YYYY-MM-DD. Same value,
+ *      supported by every git this estate could plausibly run.
+ *   2. The result is SHAPE-CHECKED. Anything that is not a bare date — an
+ *      unexpanded placeholder, an empty line, a future git's new spelling —
+ *      returns null, which routes into the documented "version unreadable"
+ *      path: content is still fully verified, the version is simply not
+ *      invented. This is what makes the fix general rather than one-off: the
+ *      failure mode is now "cannot read the version", never "read the wrong
+ *      version and call the tree stale".
+ */
+const VERSION_SHAPE = /^\d{4}-\d{2}-\d{2}$/;
+
 export function treeVersion() {
+  let raw;
   try {
-    return execFileSync('git', ['log', '-1', '--format=%cs', '--', 'skills'], {
+    raw = execFileSync('git', ['log', '-1', '--format=%cI', '--', 'skills'], {
       cwd: REPO,
       encoding: 'utf8',
     }).trim();
   } catch {
     return null;
   }
+  const date = raw.slice(0, 10);
+  return VERSION_SHAPE.test(date) ? date : null;
 }
 
 export function renderCff(packs, version) {
@@ -197,7 +229,7 @@ function check() {
        content change still fails. */
     const m = have.match(/^version: "([0-9-]+)"$/m);
     if (version === null && m && renderCff(packs, m[1]) === have) {
-      console.log('note: git unavailable — version re-check used the committed CITATION.cff version; content verified.');
+      console.log('note: tree version UNREADABLE (git unavailable, or a date shape this git does not produce) — version re-check used the committed CITATION.cff version; content verified.');
     } else {
       /* Name the first differing line — a bare "stale" hid a machine-local
          false RED for 4 days (2026-09-10..14) because nothing said WHAT
@@ -222,7 +254,7 @@ function check() {
     for (const p of problems) console.error('  - ' + p);
     return 1;
   }
-  console.log(`gen-citation --check ok — ${packs.length} packs, version ${version}, README and CITATION.cff agree.`);
+  console.log(`gen-citation --check ok — ${packs.length} packs, version ${version ?? 'UNREADABLE (content verified against the committed version)'}, README and CITATION.cff agree.`);
   return 0;
 }
 
