@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use these rule packs, please cite them as below."
 title: "NorthPoint compliance skill packs"
 abstract: >-
-  11 operator-grade marketing-compliance rule packs published as plain
+  12 operator-grade marketing-compliance rule packs published as plain
   Markdown SKILL.md files, 307 rules across 10 counted packs.
   Information, not legal advice.
 type: dataset
@@ -12,8 +12,8 @@ authors:
   - family-names: Blomberg
     given-names: Jukka
 license: MIT
-version: "2026-09-03"
-date-released: "2026-09-03"
+version: "2026-09-18"
+date-released: "2026-09-18"
 url: "https://northpoint.fi/skills"
 repository-code: "https://github.com/jukkablomberg/northpoint"
 keywords:
@@ -41,6 +41,12 @@ references:
     abbreviation: "crypto-cmo-ai-stack"
     notes: "rule count not stated by the pack"
     url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/crypto-cmo-ai-stack/SKILL.md"
+    license: MIT
+  - type: data
+    title: "crypto-company-context"
+    abbreviation: "crypto-company-context"
+    notes: "rule count not stated by the pack"
+    url: "https://github.com/jukkablomberg/northpoint/blob/main/skills/crypto-company-context/SKILL.md"
     license: MIT
   - type: data
     title: "FCA Financial Promotions Self-Audit Pro"
