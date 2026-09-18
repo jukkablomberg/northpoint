@@ -12,6 +12,8 @@ metadata:
 
 A pragmatic, operator-grade pre-flight checklist for European crypto marketers shipping acquisition copy, paid ads, landing pages, influencer briefs, and stablecoin creative under MiCA.
 
+**Before you start:** if `.agents/crypto-company.md` exists, read it first and take jurisdictions, licences and token status from it — do not re-ask what it answers. If it is absent, suggest running `crypto-company-context` once, then continue.
+
 ## When to activate
 
 Activate this skill whenever the user:

@@ -10,9 +10,15 @@
   },
   "plugins": [
     {
+      "name": "crypto-company-context",
+      "displayName": "Crypto Company Context",
+      "description": "Run once per company, first: writes .agents/crypto-company.md — jurisdictions, licences, token status, claims inventory — which every other skill reads before it runs.",
+      "source": "./skills/crypto-company-context"
+    },
+    {
       "name": "mica-marketing-self-audit-pro",
       "displayName": "MiCA Marketing Self-Audit Pro",
-      "description": "EU marketing under MiCA Title II\u2013IV + ESMA guidance, with interpretive notes and rewrites.",
+      "description": "EU marketing under MiCA Title II–IV + ESMA guidance, with interpretive notes and rewrites.",
       "source": "./skills/mica-marketing-self-audit-pro"
     },
     {
@@ -60,13 +66,13 @@
     {
       "name": "aeo-visibility-audit-pro",
       "displayName": "AEO / GEO Visibility Audit Pro",
-      "description": "Whether AI answer engines cite you when asked about your category \u2014 and what is stopping them.",
+      "description": "Whether AI answer engines cite you when asked about your category — and what is stopping them.",
       "source": "./skills/aeo-visibility-audit-pro"
     },
     {
       "name": "mica-marketing-self-audit",
       "displayName": "MiCA Marketing Self-Audit",
-      "description": "The pre-flight checklist version of the MiCA rules \u2014 pass/fail per rule, no interpretive notes.",
+      "description": "The pre-flight checklist version of the MiCA rules — pass/fail per rule, no interpretive notes.",
       "source": "./skills/mica-marketing-self-audit"
     },
     {

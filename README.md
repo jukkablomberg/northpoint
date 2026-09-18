@@ -1,8 +1,8 @@
 # NorthPoint
 
-Open playbooks from [NorthPoint](https://northpoint.fi) — a crypto-native growth company. AI-fueled growth, run by an operator.
+Open playbooks from [NorthPoint](https://northpoint.fi?utm_source=github&utm_medium=readme&utm_campaign=northpoint-skills) — a crypto-native growth company. AI-fueled growth, run by an operator.
 
-Eleven skills: the nine marketing-compliance rule packs NorthPoint built and ran internally, plus the MiCA pre-flight checklist and the crypto-CMO AI stack. All of it free, in full, under MIT.
+Twelve skills: the nine marketing-compliance rule packs NorthPoint built and ran internally, plus the MiCA pre-flight checklist, the crypto-CMO AI stack, and the company-context file every pack reads first. All of it free, in full, under MIT.
 
 Each skill is one `SKILL.md` — plain Markdown carrying the rules, the judgment notes and the output format. No code, no account, no runtime.
 
@@ -17,6 +17,7 @@ npx skills add jukkablomberg/northpoint
 One skill at a time:
 
 ```
+npx skills add jukkablomberg/northpoint --skill crypto-company-context
 npx skills add jukkablomberg/northpoint --skill mica-marketing-self-audit-pro
 npx skills add jukkablomberg/northpoint --skill fca-financial-promotions-pro
 npx skills add jukkablomberg/northpoint --skill gdpr-marketing-self-audit-pro
@@ -40,6 +41,7 @@ npx skills add jukkablomberg/northpoint --list
 
 ```
 /plugin marketplace add jukkablomberg/northpoint
+/plugin install crypto-company-context
 /plugin install mica-marketing-self-audit-pro
 /plugin install fca-financial-promotions-pro
 /plugin install gdpr-marketing-self-audit-pro
@@ -61,6 +63,7 @@ Claude.ai: upload the file under Settings → Capabilities → Skills, or add it
 
 | Skill | Size | What it does |
 |---|---|---|
+| [`crypto-company-context`](./skills/crypto-company-context/SKILL.md) | context file | Run once per company, first: writes `.agents/crypto-company.md` — jurisdictions, licences, token status, claims inventory — which every other skill reads before it runs. |
 | [`mica-marketing-self-audit-pro`](./skills/mica-marketing-self-audit-pro/SKILL.md) | 40 rules | EU marketing under MiCA Title II–IV + ESMA guidance, with interpretive notes and rewrites. |
 | [`fca-financial-promotions-pro`](./skills/fca-financial-promotions-pro/SKILL.md) | 25 rules | UK financial promotions: s21 FSMA, COBS 4.12A, PERG 8, the Oct-2023 cryptoasset regime. |
 | [`gdpr-marketing-self-audit-pro`](./skills/gdpr-marketing-self-audit-pro/SKILL.md) | 30 rules | GDPR + ePrivacy for marketing: consent, cookie banners, forms, automation flows. |
@@ -85,17 +88,17 @@ The rules are free. MIT means you can fork them, change them, run them inside a 
 
 If a pack tells you something useful, the two places to send someone:
 
-- **[northpoint.fi/check](https://northpoint.fi/check)** — eleven free checks, no signup. Paste an asset, get a verdict. Same rule families as the packs, run for you.
+- **[northpoint.fi/check](https://northpoint.fi/check?utm_source=github&utm_medium=readme&utm_campaign=northpoint-skills)** — eleven free checks, no signup. Paste an asset, get a verdict. Same rule families as the packs, run for you.
 
-- **[northpoint.fi/pricing](https://northpoint.fi/pricing)** — the fractional-CMO plans, for when the problem is not one asset but the whole marketing function.
+- **[northpoint.fi/pricing](https://northpoint.fi/pricing?utm_source=github&utm_medium=readme&utm_campaign=northpoint-skills)** — the fractional-CMO plans, for when the problem is not one asset but the whole marketing function.
 
 ## About NorthPoint
 
-NorthPoint is a crypto-native growth company: one operator plus an AI agent fleet, selling a fractional CMO seat. Three plans — Starter €2,490/mo, Growth €4,900/mo, Enterprise €15,000–50,000/mo — form-led, cancel any time. [northpoint.fi/pricing](https://northpoint.fi/pricing).
+NorthPoint is a crypto-native growth company: one operator plus an AI agent fleet, selling a fractional CMO seat. Three plans — Starter €2,490/mo, Growth €4,900/mo, Enterprise €15,000–50,000/mo — form-led, cancel any time. [northpoint.fi/pricing](https://northpoint.fi/pricing?utm_source=github&utm_medium=readme&utm_campaign=northpoint-skills).
 
 The free checks are an awareness surface, not a product. These packs are the rule sets behind them, published so that nobody has to take the checks on faith.
 
-Founded by Jukka Blomberg — ex-CMO at two international crypto exchanges (LocalBitcoins, NoOnes), now running growth for crypto and fintech companies through NorthPoint. [northpoint.fi](https://northpoint.fi)
+Founded by Jukka Blomberg — ex-CMO at two international crypto exchanges (LocalBitcoins, NoOnes), now running growth for crypto and fintech companies through NorthPoint. [northpoint.fi](https://northpoint.fi?utm_source=github&utm_medium=readme&utm_campaign=northpoint-skills)
 
 ## Licence
 
