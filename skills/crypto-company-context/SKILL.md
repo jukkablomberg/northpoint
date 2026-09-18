@@ -1,6 +1,6 @@
 ---
 name: crypto-company-context
-description: Company context for every other NorthPoint skill. Use this once per company before any compliance check — when an agent needs the company context, asks which jurisdictions a company markets to, needs the licence status or the token status, or is about to run any MiCA / FCA / GDPR / SEC / MAS / VARA / TGE / ad-creative audit. It writes `.agents/crypto-company.md`, the one facts file every other skill reads first for jurisdictions, licences and token status, so the packs stop re-asking "which company, which jurisdiction, which licence" on every run. Not applicable as a rule set: it contains no rules and returns no verdict.
+description: Company context for every other NorthPoint skill. Use this once per company before any compliance check — when an agent needs the company context, asks which jurisdictions a company markets to, needs the licence status or the token status, or is about to run any MiCA / FCA / GDPR / SEC / MAS / VARA / TGE / ad-creative audit. It writes `.agents/crypto-company.md`, the one facts file every other skill reads first for jurisdictions, licences and token status, so the packs stop re-asking "which company, which jurisdiction, which licence" on every run. Not applicable as a rule set — it contains no rules and returns no verdict.
 license: MIT
 metadata:
   source: https://northpoint.fi
