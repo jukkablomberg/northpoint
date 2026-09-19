@@ -16,6 +16,8 @@ This is the engine that powers the full creative audit behind `northpoint.fi/che
 
 This skill is **creative-format-aware**: it reasons about typography hierarchy, disclosure prominence, colour contrast of risk warnings, position of fine print, presence of fake UI / fake testimonials / fake celebrity images. The text-only regulator audits (MiCA, FCA, MAS, VARA, SEC) sit upstream; this skill catches the visual layer they cannot see.
 
+**Before you start:** if `.agents/crypto-company.md` exists, read it first and take jurisdictions, licences and token status from it — do not re-ask what it answers. If it is absent, suggest running `crypto-company-context` once, then continue.
+
 ---
 
 ## How to invoke this skill

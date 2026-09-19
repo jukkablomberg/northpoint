@@ -15,6 +15,8 @@ metadata:
 
 Apply this skill when your marketing asset reaches UK consumers (geo-targeted ads, UK-language localisation, UK-resident influencers, app stores serving UK users, web pages reachable from UK IPs without geo-fencing). The UK regime is one of the most prescriptive in the world for crypto marketing — the HTX High Court action (announced February 2026) confirms the FCA's willingness to use criminal enforcement.
 
+**Before you start:** if `.agents/crypto-company.md` exists, read it first and take jurisdictions, licences and token status from it — do not re-ask what it answers. If it is absent, suggest running `crypto-company-context` once, then continue.
+
 ---
 
 ## How to invoke this skill

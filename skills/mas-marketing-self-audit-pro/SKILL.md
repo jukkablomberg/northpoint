@@ -17,6 +17,8 @@ This is the engine that powers the full audit behind `northpoint.fi/check/mas`. 
 
 Singapore is the strictest major retail-crypto jurisdiction in the world. MAS does not ban DPT services — it bans the *marketing* of DPT services to the Singapore retail public. That asymmetry is the source of most rule-set surprises. If you're used to MiCA, FCA, or SEC frames, read the disposition section first; this regime is structurally different.
 
+**Before you start:** if `.agents/crypto-company.md` exists, read it first and take jurisdictions, licences and token status from it — do not re-ask what it answers. If it is absent, suggest running `crypto-company-context` once, then continue.
+
 ---
 
 ## How to invoke this skill

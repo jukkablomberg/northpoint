@@ -17,6 +17,8 @@ This is the engine behind the full audit behind `northpoint.fi/check/tge`. The p
 
 A TGE is the single highest-stakes marketing moment in a crypto project's life: one window, maximum regulator attention, and copy that doubles as a public offer. This pack exists to answer one question before announcement — *"is this launch surface safe to ship, and where?"*
 
+**Before you start:** if `.agents/crypto-company.md` exists, read it first and take jurisdictions, licences and token status from it — do not re-ask what it answers. If it is absent, suggest running `crypto-company-context` once, then continue.
+
 ---
 
 ## How to invoke this skill

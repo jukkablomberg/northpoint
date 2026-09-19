@@ -16,6 +16,8 @@ This is the engine behind `northpoint.fi/check/aeo`. The public version checks 4
 
 The question this answers: when a founder, investor, or journalist asks an AI — *"what's the best L1 for RWAs?"*, *"which stablecoin rails are MiCA-ready?"* — **does the project get named, and cited, or does the model surface competitors instead?** Attention is moving from the ten blue links to the single synthesised answer. This audit measures readiness for that surface.
 
+**Before you start:** if `.agents/crypto-company.md` exists, read it first and take jurisdictions, licences and token status from it — do not re-ask what it answers. If it is absent, suggest running `crypto-company-context` once, then continue.
+
 ---
 
 ## Two modes

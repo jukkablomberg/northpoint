@@ -17,6 +17,8 @@ Apply this skill when your marketing asset reaches US consumers (geo-targeted ad
 
 The US regime is structurally different from MiCA or FCA. Howey is the load-bearing case; Section 5 is the registration perimeter; Section 17(a) and Rule 10b-5 are the anti-fraud tools; Section 17(b) is the anti-touting tool. The March 2026 SEC-CFTC joint interpretation reframes the analysis to centre on issuer marketing language — making this audit's role unusually consequential.
 
+**Before you start:** if `.agents/crypto-company.md` exists, read it first and take jurisdictions, licences and token status from it — do not re-ask what it answers. If it is absent, suggest running `crypto-company-context` once, then continue.
+
 ---
 
 ## How to invoke this skill

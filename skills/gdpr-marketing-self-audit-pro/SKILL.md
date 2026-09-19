@@ -15,6 +15,8 @@ metadata:
 
 This is the engine that powers the full audit behind `northpoint.fi/check/gdpr`. The public version checks 5 rules. This skill checks all 30+, with operator-grade interpretive notes that the public version doesn't include.
 
+**Before you start:** if `.agents/crypto-company.md` exists, read it first and take jurisdictions, licences and token status from it — do not re-ask what it answers. If it is absent, suggest running `crypto-company-context` once, then continue.
+
 ---
 
 ## How to invoke this skill
