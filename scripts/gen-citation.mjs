@@ -65,14 +65,14 @@ function frontmatter(md) {
   return out;
 }
 
-export function readPacks() {
+export function readPacks(skillsDir = SKILLS) {
   return fs
-    .readdirSync(SKILLS, { withFileTypes: true })
+    .readdirSync(skillsDir, { withFileTypes: true })
     .filter((e) => e.isDirectory())
     .map((e) => e.name)
     .sort()
     .map((slug) => {
-      const file = path.join(SKILLS, slug, 'SKILL.md');
+      const file = path.join(skillsDir, slug, 'SKILL.md');
       const md = fs.readFileSync(file, 'utf8');
       const fm = frontmatter(md);
       const h1r = md.match(H1_RULES);
