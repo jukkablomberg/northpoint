@@ -12,8 +12,8 @@ authors:
   - family-names: Blomberg
     given-names: Jukka
 license: MIT
-version: "2026-09-29"
-date-released: "2026-09-29"
+version: "2026-10-01"
+date-released: "2026-10-01"
 url: "https://northpoint.fi/skills"
 repository-code: "https://github.com/jukkablomberg/northpoint"
 keywords:
