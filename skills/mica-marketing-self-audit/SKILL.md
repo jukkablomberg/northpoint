@@ -1,11 +1,12 @@
 ---
 name: mica-marketing-self-audit
-description: 40-rule operator-grade pre-flight checklist for MiCA-compliant crypto marketing. Use when reviewing a draft crypto ad, landing page, influencer brief, paid social creative, email, push notification, earn/staking promo, or stablecoin creative before it ships to any EU market. Runs a structured pass/fail audit per rule with rewrite suggestions. Does NOT replace legal review — escalates to counsel when more than 3 rules fail.
+description: 40-rule operator-grade pre-flight checklist for crypto marketing aimed at the EU, against the MiCA rules (Regulation 2023/1114, Title II–IV). Use when reviewing a draft crypto ad, landing page, influencer brief, paid social creative, email, push notification, earn/staking promo, or stablecoin creative before it ships to any EU market. Runs a structured pass/fail audit per rule with rewrite suggestions. Does NOT replace legal review — escalates to counsel when more than 3 rules fail.
 license: MIT
 metadata:
   source: https://northpoint.fi
   author: Jukka Blomberg
   jurisdiction: EU (MiCA, Regulation 2023/1114)
+  version: 1.0.0
 ---
 
 # mica-marketing-self-audit
@@ -63,14 +64,14 @@ ESCALATION
 date (the date of this run, ISO 8601):
 
 ```
-PROVENANCE: mica-marketing-self-audit unversioned · 40 rules · MIT · northpoint.fi/skills?ref=audit-output · run {run date, YYYY-MM-DD}
+PROVENANCE: mica-marketing-self-audit v1.0.0 · 40 rules · MIT · northpoint.fi/skills?ref=audit-output · run {run date, YYYY-MM-DD}
 ```
 
 Any JSON rendering of this audit (an audit-history row, or the JSON above)
 carries one more top-level key, `provenance`, with the same fields:
 
 ```json
-"provenance": {"pack":"mica-marketing-self-audit","version":null,"rules":40,"license":"MIT","url":"https://northpoint.fi/skills?ref=audit-output","run":"{run date, YYYY-MM-DD}"}
+"provenance": {"pack":"mica-marketing-self-audit","version":"1.0.0","rules":40,"license":"MIT","url":"https://northpoint.fi/skills?ref=audit-output","run":"{run date, YYYY-MM-DD}"}
 ```
 
 A structured-output tool call (`submit_audit`) carries only the fields its
