@@ -5,7 +5,7 @@ license: MIT
 metadata:
   source: https://northpoint.fi
   author: Jukka Blomberg
-  version: 1.0.0
+  version: 1.0.1
   authored: 2026-05-05
   published: 2026-09-03
   jurisdiction: EU (MiCA, Regulation 2023/1114)
@@ -53,25 +53,25 @@ Rules 1–5 are the public version (already on `northpoint.fi/check/mica`). Rule
 ### CATEGORY A — Risk warnings (rules 1, 6–9)
 
 #### Rule 1 — Substantive risk warning required
-- **Citation:** MiCA Article 88(1) — fair, clear, and not misleading; ESMA guidance on risk warnings in marketing communications
+- **Citation:** MiCA Article 7(1)(b) (CASPs: Article 66(2)–(3)) — fair, clear, and not misleading; ESMA guidance on risk warnings in marketing communications
 - **Severity:** FAIL (if missing); PASS (if present and substantive)
 - **Check:** Look for explicit risk-warning phrasing — *"capital is at risk", "crypto-assets are highly volatile", "value can decrease", "may lose your investment", "past performance is not a reliable indicator", "not financial advice", "DYOR", "risk of loss"*. Generic words like "risk" alone (e.g. inside "risk-free") do NOT satisfy.
 - **Rewrite pattern:** *"Crypto-assets are highly volatile. Your capital is at risk. Past performance does not guarantee future results."*
 
 #### Rule 6 — Risk warning prominence
-- **Citation:** Article 88(1) + ESMA Guidelines on Marketing Communications — proportionality of warning vs claim
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)–(3)) + ESMA Guidelines on Marketing Communications — proportionality of warning vs claim
 - **Severity:** FLAG
 - **Check:** Risk warning must be in the same visual block as the value proposition or yield/return claim, not solely in the footer. Compare hero-headline font weight to risk-warning font weight; if disproportionate, flag.
 - **Rewrite pattern:** Move the risk warning into the same viewport as the H1 / hero CTA. Match font weight to body copy. Remove from the page footer if redundant once moved up.
 
 #### Rule 7 — Mobile-first risk-warning placement
-- **Citation:** ESMA guidance on marketing communications (consumer-protection emphasis) + Article 88(1)
+- **Citation:** ESMA guidance on marketing communications (consumer-protection emphasis) + Article 7(1)(b) (CASPs: Article 66(2)–(3))
 - **Severity:** FLAG
 - **Check:** On a phone viewport, the risk warning should appear within the first scroll. If the asset is a landing page where the warning only appears below the fold, flag.
 - **Rewrite pattern:** Reorder content blocks so risk warning is in the hero or first-fold section.
 
 #### Rule 8 — Capital-loss specific language required
-- **Citation:** Article 88(1) — "fair, clear, and not misleading" + ESMA emphasis on consumer protection
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)–(3)) — "fair, clear, and not misleading" + ESMA emphasis on consumer protection
 - **Severity:** FAIL (for explicit financial-product / yield products); FLAG (for general crypto exchange marketing)
 - **Check:** When the asset describes a yield-bearing product, lending product, staking product, or investment product, the warning must explicitly mention capital loss (not just general "volatility"). *"Your capital is at risk"* or equivalent.
 - **Rewrite pattern:** Add *"You may lose all of the capital you commit"* or *"Your capital is at risk"* explicitly when the product implies returns.
@@ -85,43 +85,43 @@ Rules 1–5 are the public version (already on `northpoint.fi/check/mica`). Rule
 ### CATEGORY B — Misleading claims, guarantees, and superlatives (rules 2, 3, 10–14)
 
 #### Rule 2 — No guaranteed-return language
-- **Citation:** Article 88(1) — fair, clear, not misleading
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) — fair, clear, not misleading
 - **Severity:** FAIL
 - **Check:** Phrases that imply guaranteed returns: *"guaranteed yield/profit/return", "risk-free", "100% safe", "passive income", "always profitable", "zero risk", "can't lose", "sure thing", "principal protected"*.
 - **Rewrite pattern:** Replace with hedged language: *"potential yield"*, *"may earn"*, *"subject to market conditions"*. Always pair with risk warning.
 
 #### Rule 3 — Unsubstantiated superlatives
-- **Citation:** Article 88(1) — fair, clear, not misleading
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) — fair, clear, not misleading
 - **Severity:** FLAG
 - **Check:** Superlatives without substantiation: *"world's leading", "#1", "best-in-class", "unbeatable", "lowest fees in industry", "industry-leading"*.
 - **Rewrite pattern:** Either remove the superlative or pair it with a verifiable, dated, sourced fact: *"ranked #1 by [source] in [date]"*.
 
 #### Rule 10 — Substantiation for numerical claims
-- **Citation:** Article 88(1) + ESMA Guidance on advertising of investment services
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) + ESMA Guidance on advertising of investment services
 - **Severity:** FAIL (if numerical claim is load-bearing); FLAG (if minor)
 - **Check:** Numerical claims (*"$5B in assets", "200K users", "$340M traded daily", "X% APY"*) must be dated, sourced, and methodologically explained. If not, flag/fail.
 - **Rewrite pattern:** Add a date and source: *"$5B in assets as of [DATE], per [internal accounting / [source]]"*. Move methodology behind a footnote link if space-constrained.
 
 #### Rule 11 — No emphasis on potential gains without potential losses
-- **Citation:** Article 88(1) + ESMA guidance — balanced presentation
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) + ESMA guidance — balanced presentation
 - **Severity:** FLAG
 - **Check:** Marketing that emphasises potential gains (yields, returns, % growth) without proportional mention of potential losses fails the balanced-presentation test even if a risk warning is present elsewhere.
 - **Rewrite pattern:** Within the same sentence/visual block as the gain, mention the loss. *"Earn up to X% APY — yields fluctuate; capital is at risk."*
 
 #### Rule 12 — No misleading time-frame compression
-- **Citation:** Article 88(1) + ESMA guidance
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) + ESMA guidance
 - **Severity:** FLAG
 - **Check:** Phrases that imply easy/fast outcomes: *"in under a minute", "instant withdrawal", "1-click X", "earn while you sleep", "set and forget"*. If the underlying process actually takes longer, this is misleading.
 - **Rewrite pattern:** Use accurate time-framings: *"Most withdrawals process within 24 hours"*. Accept the marketing tradeoff.
 
 #### Rule 13 — No "as good as money" framing for crypto-assets
-- **Citation:** Article 88(1) — misleading communications
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) — misleading communications
 - **Severity:** FAIL (for crypto-assets that are not e-money tokens)
 - **Check:** Phrases that imply crypto-assets are equivalent to fiat or fully fungible: *"like dollars but better", "digital cash", "spend it anywhere"*. For non-EMT crypto-assets, this misframes their nature.
 - **Rewrite pattern:** Be specific. *"[Token] is a utility token redeemable for [specific use]; it is not legal tender."*
 
 #### Rule 14 — No regulatory-approval misframing
-- **Citation:** Article 88(2) + general consumer protection
+- **Citation:** Article 7(1)(b) + Article 7(1)(e) + general consumer protection
 - **Severity:** FAIL
 - **Check:** Phrases that imply regulatory endorsement: *"regulator-approved", "ESMA-approved", "FCA-approved", "compliant with all regulations", "MiCA-certified"*. Authorisation under MiCA is licensing, not endorsement.
 - **Rewrite pattern:** Use precise language: *"[Entity] is authorised as a CASP under MiCA in [Member State]"*. Avoid words implying regulator endorsement of the product itself.
@@ -129,25 +129,25 @@ Rules 1–5 are the public version (already on `northpoint.fi/check/mica`). Rule
 ### CATEGORY C — Past performance and historical claims (rules 5, 15–17)
 
 #### Rule 5 — Past-performance disclaimer
-- **Citation:** Article 88 + ESMA guidance
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) + ESMA guidance
 - **Severity:** FAIL
 - **Check:** Any historical-return claim (*"returned 340% in 2024"*, *"X turned into Y"*, *"3x return"*) requires the standard disclaimer in the same visual block: *"Past performance is not a reliable indicator of future results."*
 - **Rewrite pattern:** Add the disclaimer adjacent to the claim. Don't bury in a footnote.
 
 #### Rule 15 — Selective time-period cherry-picking
-- **Citation:** Article 88(1) + ESMA guidance on balanced presentation
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) + ESMA guidance on balanced presentation
 - **Severity:** FLAG (FAIL if egregious)
 - **Check:** Performance claims drawn from cherry-picked time windows that exclude losing periods. If asset shows "performance since launch" and launch was during a bull market, flag for context-dependent fairness.
 - **Rewrite pattern:** Show full history or explain methodology. *"Performance Jan 2020 to Mar 2024; includes [N] drawdowns of >20%."*
 
 #### Rule 16 — Forward-looking projections without basis
-- **Citation:** Article 88(1) + ESMA guidance
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) + ESMA guidance
 - **Severity:** FAIL
 - **Check:** Forward-looking statements (*"will reach $100K", "expected APY of 12%", "projected returns"*) without modelling basis or appropriate hedge language.
 - **Rewrite pattern:** Either remove the projection or frame as a target/estimate with methodology: *"Target APY based on [methodology]; actual yields may vary."*
 
 #### Rule 17 — Historical comparison framing
-- **Citation:** Article 88(1) + ESMA guidance
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) + ESMA guidance
 - **Severity:** FLAG
 - **Check:** Phrases like *"would have returned [X] if you'd invested $1,000 in 2017"* that imply users could have captured the same performance. Must include risk warning + caveats.
 - **Rewrite pattern:** Add caveats explicitly: *"This comparison assumes a hypothetical investment held without rebalancing, fees, or tax considerations."*
@@ -155,37 +155,37 @@ Rules 1–5 are the public version (already on `northpoint.fi/check/mica`). Rule
 ### CATEGORY D — Identifiability and disclosure (rules 4, 18–22)
 
 #### Rule 4 — Marketing identifiability (CTA presence)
-- **Citation:** Article 88(2) — marketing communications must be identifiable as such
+- **Citation:** Article 7(1)(a) (CASPs: Article 66(2)) — marketing communications must be identifiable as such
 - **Severity:** FLAG
 - **Check:** When promotional/CTA language is present without an identifiability marker (*"Advertisement", "Sponsored", "#ad"*), particularly for influencer/affiliate content. First-party brand context typically satisfies.
 - **Rewrite pattern:** For sponsored/affiliate content, add *"Advertisement"*, *"Sponsored"*, or *"#ad"* depending on platform.
 
 #### Rule 18 — Influencer/KOL paid-content marker
-- **Citation:** Article 88(2) + ESMA guidance on paid promotion + national consumer-protection rules
+- **Citation:** Article 7(1)(a) (CASPs: Article 66(2)) + ESMA guidance on paid promotion + national consumer-protection rules
 - **Severity:** FAIL (when missing on KOL content)
 - **Check:** When the asset is or refers to influencer-published content, the influencer's content must include a clear paid-partnership marker. Per-platform: *"Paid partnership", "#ad", "@brand partner"*.
 - **Rewrite pattern:** Add platform-appropriate marker at the start of the post (not buried in description).
 
 #### Rule 19 — Affiliate-link disclosure
-- **Citation:** Article 88(2) + general consumer-protection law
+- **Citation:** Article 7(1)(a) (CASPs: Article 66(2)) + general consumer-protection law
 - **Severity:** FAIL
 - **Check:** When the asset is a third-party publication that includes affiliate links to the marketed product, must disclose the affiliate relationship. Hidden affiliate relationships fail.
 - **Rewrite pattern:** Add disclosure: *"This article contains affiliate links; we earn a commission if you sign up via [name]."*
 
 #### Rule 20 — Identity of the issuer / CASP
-- **Citation:** Article 88(1) + Article 6 (whitepaper) + general transparency
+- **Citation:** Article 7(1)(d) + Article 6 (whitepaper) + general transparency
 - **Severity:** FLAG
 - **Check:** Marketing must clearly identify the legal entity providing the service, particularly for ART/EMT marketing. *"AcmeExchange"* alone insufficient if the legal entity is *"Acme Crypto Services Oy"*.
 - **Rewrite pattern:** Include the legal entity in the footer or about-this-page section. *"Service provided by [Legal Entity], registered in [Jurisdiction]."*
 
 #### Rule 21 — Fee disclosure for paid-channel content
-- **Citation:** Article 88(2) + ESMA guidance on transparency
+- **Citation:** Article 7(1)(a) + ESMA guidance on transparency
 - **Severity:** FLAG
 - **Check:** When marketing references zero fees, low fees, or fee promotions, the actual fee structure must be linked or disclosed prominently. *"Trade with low fees"* without fee-page link flags.
 - **Rewrite pattern:** Link to the fee page. *"View full fee schedule at [URL]"*.
 
 #### Rule 22 — Conflict-of-interest disclosure for proprietary products
-- **Citation:** Article 88(1) + ESMA guidance + MiFID2-adjacent best practice
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) + ESMA guidance + MiFID2-adjacent best practice
 - **Severity:** FLAG
 - **Check:** When the asset markets a proprietary token alongside non-proprietary services (e.g. exchange marketing its own token), the conflict must be disclosed.
 - **Rewrite pattern:** Add disclosure: *"[Token] is a token issued by [Entity]. We have a financial interest in its adoption."*
@@ -193,25 +193,25 @@ Rules 1–5 are the public version (already on `northpoint.fi/check/mica`). Rule
 ### CATEGORY E — Whitepaper consistency (rules 23–26)
 
 #### Rule 23 — Marketing claims must appear in whitepaper
-- **Citation:** Article 6(2) + Article 8 + Article 88(1) — consistency requirement
+- **Citation:** Article 6(2) + Article 8 + Article 7(1)(c) — consistency requirement
 - **Severity:** FAIL (when material inconsistency); FLAG (when minor)
 - **Check:** Compare load-bearing marketing claims against the whitepaper. If a marketing claim does not appear in the whitepaper, or appears with materially more cautious framing in the whitepaper, fail.
 - **Rewrite pattern:** Either update the whitepaper to match the marketing (with all the formal-disclosure obligations that triggers) or weaken the marketing to match the whitepaper. Marketing version should always be more conservative than whitepaper, never more aggressive.
 
 #### Rule 24 — Risk profile must match whitepaper
-- **Citation:** Article 6(2) + Article 88(1)
+- **Citation:** Article 6(2) + Article 7(1)(c)
 - **Severity:** FAIL
 - **Check:** Marketing's framing of product risk must match the whitepaper's stated risk profile. If whitepaper describes "high volatility, smart-contract risk, regulatory risk" and marketing describes "stable, secure, regulated", fail.
 - **Rewrite pattern:** Update marketing to accurately reflect the whitepaper's risk descriptions, with appropriate hedging.
 
 #### Rule 25 — Service scope must match
-- **Citation:** Article 6 + Article 88(1)
+- **Citation:** Article 6 + Article 7(1)(c)
 - **Severity:** FLAG
 - **Check:** Marketing's description of services offered must match the CASP authorisation scope. Marketing custody when not custody-authorised, or marketing trading when not exchange-authorised, fails.
 - **Rewrite pattern:** Constrain marketing to the authorised service scope. Remove out-of-scope claims.
 
 #### Rule 26 — Token economics consistency (for ART/EMT issuers)
-- **Citation:** Article 19 (ART issuance), Article 51 (EMT) + Article 88(1)
+- **Citation:** Article 19 (ART issuance), Article 51 (EMT) + Article 29(1)(c) / Article 53(1)(c)
 - **Severity:** FAIL
 - **Check:** Marketing's description of tokenomics — supply, vesting, distribution, mechanism — must match the whitepaper. Inconsistency = FAIL.
 - **Rewrite pattern:** Reconcile with whitepaper. If tokenomics changed post-publication, file a whitepaper amendment first.
@@ -219,13 +219,13 @@ Rules 1–5 are the public version (already on `northpoint.fi/check/mica`). Rule
 ### CATEGORY F — Stablecoin / ART / EMT-specific rules (rules 27–30)
 
 #### Rule 27 — "1:1 backed" / "fully reserved" claims
-- **Citation:** Article 35 (ART reserves), Article 53 (EMT reserves), Article 88(1)
+- **Citation:** Article 35 (ART reserves), Article 53 (EMT reserves), Article 29(1)(b) / Article 53(1)(b) (marketing communications)
 - **Severity:** FAIL (for misframing); PASS (when accurate)
 - **Check:** Phrases like *"1:1 backed"*, *"fully reserved"*, *"100% backed by USD"* require demonstrable compliance with MiCA's reserve composition + custody + segregation rules. If reserves don't actually meet MiCA requirements, fail.
 - **Rewrite pattern:** Use precise language: *"Backed 1:1 by [specific reserve assets] held in segregated custody at [custodian], in compliance with MiCA Title III reserve requirements."* Link to the reserve attestation.
 
 #### Rule 28 — "Stable" claim for stablecoins
-- **Citation:** Article 88(1) + EU Stablecoin Act + ESMA guidance
+- **Citation:** Article 29(1)(b) / Article 53(1)(b) + EU Stablecoin Act + ESMA guidance
 - **Severity:** FLAG (in normal market); FAIL (if asset has depegged in the last 90 days)
 - **Check:** Use of "stable" in the product name or marketing without disclosure of historical depeg events, redemption mechanism, or reserve composition.
 - **Rewrite pattern:** Disclose mechanism: *"[Token] is designed to maintain a 1:1 peg to [asset]; this peg is enforced via [redemption mechanism]. Like all stablecoins, the peg is not guaranteed; depegs may occur."*
@@ -245,13 +245,13 @@ Rules 1–5 are the public version (already on `northpoint.fi/check/mica`). Rule
 ### CATEGORY G — Cross-jurisdictional flags (rules 31–34)
 
 #### Rule 31 — Geo-restriction visibility
-- **Citation:** Article 88(1) + national consumer-protection laws (per Member State)
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) + national consumer-protection laws (per Member State)
 - **Severity:** FAIL (for material risk); FLAG (otherwise)
 - **Check:** Marketing materials reachable in jurisdictions where the product is not legally offered must visibly disclose the geo-restriction. Generic *"available in select jurisdictions"* often insufficient.
 - **Rewrite pattern:** List the available jurisdictions explicitly, or list the excluded jurisdictions explicitly. *"Not available to residents of: US, UK, Singapore, [list]."*
 
 #### Rule 32 — Passporting claims (for EU-licensed CASPs)
-- **Citation:** Article 59 + Article 60 (passporting) + Article 88(1)
+- **Citation:** Article 59 + Article 60 (passporting) + Article 7(1)(b) (CASPs: Article 66(2))
 - **Severity:** FLAG
 - **Check:** Marketing that claims pan-EU availability via MiCA passporting must reflect actual passporting status (which Member States actually accepted notification).
 - **Rewrite pattern:** Use accurate passporting language: *"Available across the EU/EEA, passported under MiCA from [home Member State]."*
@@ -263,7 +263,7 @@ Rules 1–5 are the public version (already on `northpoint.fi/check/mica`). Rule
 - **Rewrite pattern:** Either obtain authorisation, or geo-fence marketing out of EU effectively (geo-targeted ad settings, language and currency restrictions, payment-method restrictions).
 
 #### Rule 34 — Cross-jurisdictional regulator claims
-- **Citation:** Article 88(2) + general consumer-protection
+- **Citation:** Article 7(1)(b) + Article 7(1)(e) + general consumer-protection
 - **Severity:** FLAG
 - **Check:** Claims that imply regulatory authorization in multiple jurisdictions (*"regulated in 12 jurisdictions"*, *"globally compliant"*) often misframe the actual regulatory status.
 - **Rewrite pattern:** Be specific: *"Authorised by [regulator A] in [country], registered with [regulator B] in [country]"*.
@@ -271,37 +271,37 @@ Rules 1–5 are the public version (already on `northpoint.fi/check/mica`). Rule
 ### CATEGORY H — Specific format & channel rules (rules 35–40)
 
 #### Rule 35 — Visual prominence parity
-- **Citation:** Article 88(1) + ESMA marketing-communications guidance
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) + ESMA marketing-communications guidance
 - **Severity:** FLAG
 - **Check:** When the asset is image/video, the prominence of the value-proposition vs the prominence of the risk-warning must be in proportion. 48-pixel hero claim with 9-pixel risk-warning text = flag.
 - **Rewrite pattern:** Match font weights and prominence. If the hero is bold + 48px, the risk warning should be at least body-weight + 14px in the same viewport.
 
 #### Rule 36 — Video script disclosure
-- **Citation:** Article 88(1)(2) + ESMA guidance
+- **Citation:** Article 7(1)(a)–(b) (CASPs: Article 66(2)) + ESMA guidance
 - **Severity:** FLAG
 - **Check:** Video assets (TikTok, Instagram Reels, YouTube Shorts, TV ads) must include risk-warning either as on-screen text (held for ≥3 seconds) or as voice-over. Instagram-specific: don't rely on caption-only disclosure.
 - **Rewrite pattern:** Add risk-warning on-screen text (minimum 3 seconds) or voice-over. Caption-only insufficient.
 
 #### Rule 37 — QR code / mobile redirect disclosure
-- **Citation:** Article 88(1) + ESMA guidance
+- **Citation:** Article 7(1)(b) (CASPs: Article 66(2)) + ESMA guidance
 - **Severity:** FLAG
 - **Check:** When the asset uses QR codes or mobile-redirect URLs, the destination and the disclosure obligations of the destination must be clear. Cannot use a QR code to bypass risk-warning prominence.
 - **Rewrite pattern:** The page that the QR code lands on must independently meet all the marketing rules (risk warning prominent on landing, etc.).
 
 #### Rule 38 — Email-channel rules
-- **Citation:** Article 88(1)(2) + ePrivacy Directive (Art. 13(3) — unsubscribe) + GDPR
+- **Citation:** Article 7(1)(a)–(b) (CASPs: Article 66(2)) + ePrivacy Directive (Art. 13(3) — unsubscribe) + GDPR
 - **Severity:** FAIL (no unsubscribe / forced-consent); FLAG (other concerns)
 - **Check:** Email marketing must include: clear unsubscribe link, no forced consent for opt-in, identifiability of marketing-comm nature, accurate sender, accurate subject. Cross-reference with GDPR check on the same asset.
 - **Rewrite pattern:** Add unsubscribe in footer; identify as marketing if not obviously branded; ensure subject doesn't misframe content.
 
 #### Rule 39 — KOL / influencer contract scope
-- **Citation:** Article 88(2) + ESMA guidance + national consumer-protection
+- **Citation:** Article 7(1)(a) (CASPs: Article 66(2)) + ESMA guidance + national consumer-protection
 - **Severity:** FAIL (for permanent contractual obligations missing); FLAG (otherwise)
 - **Check:** When auditing a KOL contract or briefing document, the contract must oblige the KOL to: (a) include risk warnings, (b) include paid-partnership disclosures, (c) avoid prohibited claims, (d) submit content for pre-approval, (e) accept liability framing. If any missing, fail/flag.
 - **Rewrite pattern:** Add explicit contract terms covering all five obligations. Use a KOL-contract addendum carrying those clauses.
 
 #### Rule 40 — Press release / earned-media boundary
-- **Citation:** Article 88(2) — identifiability + ESMA guidance on press communications
+- **Citation:** Article 7(1)(a) (CASPs: Article 66(2)) — identifiability + ESMA guidance on press communications
 - **Severity:** FLAG
 - **Check:** Press releases drift between marketing communication and editorial content. If the press release contains: yield claims, return claims, or specific product solicitations, marketing-communication rules fully apply (must include risk warning, etc.). If purely informational (corporate news, partnerships, hires), more relaxed.
 - **Rewrite pattern:** When the press release crosses into product solicitation, treat it as marketing and apply full risk-warning rules. Or split into two: a press release (no marketing), and a marketing announcement (full disclosure).
@@ -403,14 +403,14 @@ AUDIT-HISTORY ROW (JSON):
 date (the date of this run, ISO 8601):
 
 ```
-PROVENANCE: MiCA Marketing Self-Audit Pro v1.0.0 · 40 rules · MIT · northpoint.fi/skills/mica?ref=audit-output · run {run date, YYYY-MM-DD}
+PROVENANCE: MiCA Marketing Self-Audit Pro v1.0.1 · 40 rules · MIT · northpoint.fi/skills/mica?ref=audit-output · run {run date, YYYY-MM-DD}
 ```
 
 Any JSON rendering of this audit (an audit-history row, or the JSON above)
 carries one more top-level key, `provenance`, with the same fields:
 
 ```json
-"provenance": {"pack":"MiCA Marketing Self-Audit Pro","version":"1.0.0","rules":40,"license":"MIT","url":"https://northpoint.fi/skills/mica?ref=audit-output","run":"{run date, YYYY-MM-DD}"}
+"provenance": {"pack":"MiCA Marketing Self-Audit Pro","version":"1.0.1","rules":40,"license":"MIT","url":"https://northpoint.fi/skills/mica?ref=audit-output","run":"{run date, YYYY-MM-DD}"}
 ```
 
 A structured-output tool call (`submit_audit`) carries only the fields its

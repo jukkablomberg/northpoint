@@ -5,7 +5,7 @@ license: MIT
 metadata:
   source: https://northpoint.fi
   author: Jukka Blomberg
-  version: 1.0.0
+  version: 1.0.1
   authored: 2026-05-21
   published: 2026-09-03
 ---
@@ -62,25 +62,25 @@ Rules in **bold** (1, 4, 7, 10, 13, 17, 20, 23, 27, 30) are the public version o
 ### CATEGORY A — Risk-warning visual prominence (rules 1–4)
 
 #### Rule 1 — Risk warning present and legible
-- **Citation:** MiCA Article 88(1); FCA COBS 4.12A.21R (risk warning prominence); MAS Guidelines on Provision of Digital Payment Token Services to the Public (Jan 2022) §3; VARA Marketing Regulations 2023 Art. 14 (Risk Warnings)
+- **Citation:** MiCA Article 66(3); FCA COBS 4.12A.11R(1)(d) (prescribed risk warning); MAS Guidelines on Provision of Digital Payment Token Services to the Public (Jan 2022) §3; VARA Marketing Regulations 2023 Art. 14 (Risk Warnings)
 - **Severity:** FAIL (if missing on a creative targeting any of EU / UK / MAS / VARA jurisdictions)
 - **Check:** Inspect the image for any risk-warning text — *"capital is at risk", "crypto-assets are highly volatile", "you could lose all the money you invest", "past performance is not a reliable indicator"*. If no risk-warning text is visible at any legible size, FAIL. If present but rendered at a font size where the average viewer on the intended device cannot read it (rule-of-thumb: under ~8px on desktop banner, under ~10px on mobile creative), FAIL on legibility.
 - **Rewrite pattern:** Add a risk warning in the creative at minimum 12px (mobile) or 14px (desktop). Suggested copy: *"Crypto-assets are highly volatile. Your capital is at risk."* Place inside the main creative frame, not bleeding into a margin.
 
 #### Rule 2 — Font-size ratio: risk warning vs primary claim
-- **Citation:** FCA COBS 4.12A.21R(2) and FG23/3 (risk warnings must be "of sufficient size and prominence"); operator-grade interpretation of MiCA Art 88(1) + ESMA marketing-communications guidance
+- **Citation:** FCA COBS 4.12A.21R(2) and FG23/3 (risk warnings must be "of sufficient size and prominence"); operator-grade interpretation of MiCA Art 7(1)(b) / 66(3) + ESMA marketing-communications guidance
 - **Severity:** FAIL (if ratio <1:4); FLAG (if ratio between 1:4 and 1:3); PASS (≥1:3)
 - **Check:** Estimate the pixel height of the largest yield/return/headline claim (e.g. "Earn 12% APY"). Estimate the pixel height of the risk-warning text. If the risk warning is less than one-quarter the height of the primary claim, FAIL. If it's between a quarter and a third, FLAG. FCA's COBS 4.12A regime calls this out specifically; cross-jurisdiction regulators apply the same principle.
 - **Rewrite pattern:** Increase the risk-warning size to at least one-third the headline height. If hero claim is 60px, risk warning ≥ 20px. Match font weight to the body copy of the creative.
 
 #### Rule 3 — Risk-warning colour contrast (WCAG)
-- **Citation:** WCAG 2.2 SC 1.4.3 (contrast minimum 4.5:1 for normal text, 3:1 for large text); operator-grade application — when a risk warning fails contrast, regulators treat it as "not prominent" under MiCA 88(1) / COBS 4.12A
+- **Citation:** WCAG 2.2 SC 1.4.3 (contrast minimum 4.5:1 for normal text, 3:1 for large text); operator-grade application — when a risk warning fails contrast, regulators treat it as "not prominent" under MiCA 7(1)(b) / 66(3) / COBS 4.12A
 - **Severity:** FAIL (contrast ratio <3:1); FLAG (3:1 to 4.5:1)
 - **Check:** Estimate the contrast ratio of the risk-warning text against its background. Common failures: light-grey text on white, dark-grey on black, white text overlaying a busy photographic background, brand-coloured text on brand-coloured background. If the warning is overlaid on a photo/gradient, check whether contrast holds across the whole text run, not just one pixel.
 - **Rewrite pattern:** Use white or near-white text on a solid dark band behind the warning (add a 60% opacity black bar if the background is photographic). Avoid grey-on-grey at all costs. Target ≥ 4.5:1.
 
 #### Rule 4 — Risk-warning position in viewport
-- **Citation:** MiCA Art 88(1) + ESMA marketing-communications guidance; FCA COBS 4.12A.21R(3); operator-grade interpretation
+- **Citation:** MiCA Art 66(3) + ESMA marketing-communications guidance; FCA COBS 4.12A.21R(3); operator-grade interpretation
 - **Severity:** FLAG (if isolated to extreme corner / outside primary visual frame); FAIL (if cropped or off-canvas on intended placement)
 - **Check:** Where in the frame is the risk warning? Acceptable: same visual block as the headline/CTA, or directly under the hero, or as a fixed bottom band that takes up at least one-eighth of the creative. Not acceptable: tucked into a 6px-tall sliver at the absolute bottom edge, or in a corner where the eye doesn't go. For app store screenshots: the warning must be within the visible thumbnail, not only in the screenshot the user opens after tapping.
 - **Rewrite pattern:** Move the warning into the same visual block as the claim. For a 1080×1080 social creative, the warning band should occupy at least 90px at the bottom or be inline with the headline.
@@ -88,7 +88,7 @@ Rules in **bold** (1, 4, 7, 10, 13, 17, 20, 23, 27, 30) are the public version o
 ### CATEGORY B — Disclosure of paid promotion / sponsored content (rules 5–7)
 
 #### Rule 5 — Sponsored / #ad label visible in-frame
-- **Citation:** FTC Endorsement Guides 16 CFR Part 255 (revised 2023) §255.5; ASA CAP Code Section 2 (Recognition of Marketing Communications); ESMA guidance on identifiability under MiCA Art 88(2)
+- **Citation:** FTC Endorsement Guides 16 CFR Part 255 (revised 2023) §255.5; ASA CAP Code Section 2 (Recognition of Marketing Communications); ESMA guidance on identifiability under MiCA Art 7(1)(a) / 66(2)
 - **Severity:** FAIL (when influencer/affiliate creative is missing label); FLAG (when label is present but inconspicuous)
 - **Check:** Is there a visible *"#ad", "Sponsored", "Paid partnership with [brand]", "Advertisement", "Promotion"* marker in the creative? For influencer-produced content, the label must be in the creative itself (and on the platform's native sponsored-content tag where available), not buried in a caption that may be truncated.
 - **Rewrite pattern:** Add *"Paid partnership"* or *"#ad"* as the first words of the visible caption AND, where the creative supports it, overlay *"#ad"* in the top-left of the image. Enable platform-native "Paid partnership" tag (Meta, TikTok, YouTube).
@@ -128,7 +128,7 @@ Rules in **bold** (1, 4, 7, 10, 13, 17, 20, 23, 27, 30) are the public version o
 ### CATEGORY D — Fake or implied endorsements (rules 11–13)
 
 #### Rule 11 — No unauthorised celebrity / public-figure imagery
-- **Citation:** ASA CAP Code 6.1 (testimonials and endorsements — written permission required); FTC Endorsement Guides §255.1(b); EU Member State personality-rights law (e.g. Germany KUG §22, France CC Art 9); MiCA Art 88(1) (misleading)
+- **Citation:** ASA CAP Code 6.1 (testimonials and endorsements — written permission required); FTC Endorsement Guides §255.1(b); EU Member State personality-rights law (e.g. Germany KUG §22, France CC Art 9); MiCA Art 7(1)(b) / 66(2) (misleading)
 - **Severity:** FAIL
 - **Check:** Does the creative show a recognisable celebrity, politician, athlete, business figure, or public figure? Particular triggers: Elon Musk, CZ, Vitalik Buterin, popular finance YouTubers, national heads of state, footballers. If shown without an active, documented endorsement deal, FAIL. Includes AI-generated likenesses and deepfakes — the AI origin is not a defence.
 - **Rewrite pattern:** Remove the celebrity image. If endorsement is genuine, replace with an asset where the person consented (e.g. a stage photo from an event you co-hosted, with written permission to use the image in marketing). Add the paid-partnership marker (Rule 5).
@@ -148,19 +148,19 @@ Rules in **bold** (1, 4, 7, 10, 13, 17, 20, 23, 27, 30) are the public version o
 ### CATEGORY E — Fake UI / misleading screenshots (rules 14–16)
 
 #### Rule 14 — No fake trading-UI / fake portfolio gain mockups
-- **Citation:** MiCA Art 88(1) (misleading); FCA COBS 4.12A.7R (no presentation of hypothetical performance as actual); SEC Marketing Rule Rule 206(4)-1 (hypothetical performance restrictions, analogous); FTC Act §5
+- **Citation:** MiCA Art 7(1)(b) / 66(2) (misleading); FCA COBS 4.12A.7R (no presentation of hypothetical performance as actual); SEC Marketing Rule Rule 206(4)-1 (hypothetical performance restrictions, analogous); FTC Act §5
 - **Severity:** FAIL
 - **Check:** Screenshots of a trading interface showing a portfolio balance, P&L, or chart that are mocked-up rather than real. Tells: round-number balances, suspiciously smooth equity curves, unrealistic % gains over short periods, UI elements that don't match the live product, watermark "demo" stripped. Even when labelled as illustrative, depiction of specific dollar gains in a creative implies achievability and fails.
 - **Rewrite pattern:** Remove the fake UI. If showing the product, use a real screenshot from a paper-trading or sandbox environment with a clear *"Illustrative — not a guarantee of returns"* watermark in legible size, and use realistic numbers including drawdowns.
 
 #### Rule 15 — Charts must not be cropped to mislead scale
-- **Citation:** MiCA Art 88(1) + ESMA marketing-communications guidance §31 (balanced presentation); FCA COBS 4.12A.7R; CFA Institute GIPS-aligned best practice
+- **Citation:** MiCA Art 7(1)(b) / 66(2) + ESMA marketing-communications guidance §31 (balanced presentation); FCA COBS 4.12A.7R; CFA Institute GIPS-aligned best practice
 - **Severity:** FAIL (when cropping inverts the story); FLAG (when cropping is misleading but not inverting)
 - **Check:** Performance charts shown in the creative. Look for: y-axis not starting at zero where appropriate, time-window cherry-picked to start at a local low, y-axis broken, log scale used to compress drawdowns, the most recent drawdown cropped out of the visible frame.
 - **Rewrite pattern:** Show full time-range with y-axis from zero (or with break clearly marked). Include the most recent drawdown if any. Add date range and source on the chart itself: *"BTC/USD, Jan 2018 – May 2026, source: CoinGecko"*.
 
 #### Rule 16 — Animated number tickers and "up only" performance visuals
-- **Citation:** MiCA Art 88(1); FCA COBS 4.12A.7R; operator-grade interpretation — animated number rolls imply continuous growth
+- **Citation:** MiCA Art 7(1)(b) / 66(2); FCA COBS 4.12A.7R; operator-grade interpretation — animated number rolls imply continuous growth
 - **Severity:** FLAG (FAIL if combined with yield claim)
 - **Check:** Video / motion creatives where a counter rolls upward (account balance, # of users, total volume) without showing any decrement. Implies one-way growth. Also FLAG arrow-only-up graphics, hockey-stick illustrations used as primary hero, "to the moon" rocket visuals next to a token name.
 - **Rewrite pattern:** If using a counter, anchor it to a specific real metric with a label and date: *"Total volume traded since 2021: $X.Yb (as of May 2026)"* — static, not animated. Replace "up only" graphics with neutral product imagery.
@@ -226,7 +226,7 @@ Rules in **bold** (1, 4, 7, 10, 13, 17, 20, 23, 27, 30) are the public version o
 ### CATEGORY H — Visual misrepresentation of returns (rule 26)
 
 #### Rule 26 — Performance visuals require past-performance disclaimer in-frame
-- **Citation:** MiCA Art 88(1); FCA COBS 4.12A.7R + COBS 4.6.2R (past performance disclaimer); ESMA Guidelines on Marketing Communications §31; ASA CAP Code 3.7
+- **Citation:** MiCA Art 7(1)(b) / 66(2); FCA COBS 4.12A.7R + COBS 4.6.2R (past performance disclaimer); ESMA Guidelines on Marketing Communications §31; ASA CAP Code 3.7
 - **Severity:** FAIL
 - **Check:** Any visual depiction of returns — chart, % figure, $ figure showing growth, before/after balances — requires the disclaimer *"Past performance is not a reliable indicator of future results"* in the same frame, at legible size, in the viewer's language. Footnote-only or off-canvas placement fails. (This is the visual-side companion to MiCA Rule 5 / FCA COBS 4.6.2R.)
 - **Rewrite pattern:** Add the disclaimer adjacent to the performance visual, at minimum 12px on mobile / 14px on desktop, contrast ≥ 4.5:1 (Rule 3). Localise to the viewer's language.
@@ -234,13 +234,13 @@ Rules in **bold** (1, 4, 7, 10, 13, 17, 20, 23, 27, 30) are the public version o
 ### CATEGORY I — Target audience signals (rules 27–28)
 
 #### Rule 27 — No creative styling that targets minors or vulnerable populations
-- **Citation:** ASA CAP Code 1.3 + 18.1 (financial products must not target under-18s); UCPD Art 5(3) (vulnerable consumer protection); MiCA Art 88(1); FCA Consumer Duty PRIN 2A
+- **Citation:** ASA CAP Code 1.3 + 18.1 (financial products must not target under-18s); UCPD Art 5(3) (vulnerable consumer protection); MiCA Art 7(1)(b) / 66(2); FCA Consumer Duty PRIN 2A
 - **Severity:** FAIL
 - **Check:** Look for visual cues that target minors: cartoon mascots, gaming-style aesthetics borrowed from games popular with under-18s, school/classroom imagery, youth-celebrity faces (under-25 influencers with majority-minor followings), bright primary-colour palette mimicking children's media. Also flag creative targeting financially-vulnerable populations: "earn from home" with imagery of older retirees, debt-relief framing.
 - **Rewrite pattern:** Redesign with an adult, investor-facing visual register. Remove cartoon mascots and gaming aesthetics. For older-audience creative, remove vulnerability-targeting framings (debt relief, retirement-income guarantees).
 
 #### Rule 28 — No gambling-mechanics visual register
-- **Citation:** ASA CAP Code 16 (gambling-adjacent advertising); UK Gambling Commission guidance on crypto/gambling crossover; MiCA Art 88(1) (misleading nature of product)
+- **Citation:** ASA CAP Code 16 (gambling-adjacent advertising); UK Gambling Commission guidance on crypto/gambling crossover; MiCA Art 7(1)(b) / 66(2) (misleading nature of product)
 - **Severity:** FAIL (when product is not gambling-licensed but creative uses gambling visual conventions)
 - **Check:** Slot-machine reels, roulette wheels, spinning lottery balls, casino-chip imagery, dice as primary motif, "spin to win" mechanics, scratch-card UI, jackpot numerals. Crypto products that adopt these visuals misrepresent their nature unless licensed as gambling.
 - **Rewrite pattern:** Replace gambling visuals with neutral financial-product imagery (charts, portfolio dashboards, wallet UI). If the product genuinely has a chance-based mechanic, get a gambling licence and apply gambling rules instead.
@@ -248,7 +248,7 @@ Rules in **bold** (1, 4, 7, 10, 13, 17, 20, 23, 27, 30) are the public version o
 ### CATEGORY J — Logo and regulatory-mark misuse (rule 29)
 
 #### Rule 29 — No misuse of regulator logos, exchange logos, or fake licensing seals
-- **Citation:** MiCA Art 88(2) (no implication of regulator endorsement); FCA Handbook GEN 4 + GEN 5 (use of FCA name/logo restricted); ESMA, BaFin, AMF, CySEC, MAS, SFC, ASIC — all restrict use of regulator logos in marketing; UCPD Annex I §4 (false trust marks)
+- **Citation:** MiCA Art 7(1)(b) and 7(1)(e) (no implication of regulator endorsement); FCA Handbook GEN 4 + GEN 5 (use of FCA name/logo restricted); ESMA, BaFin, AMF, CySEC, MAS, SFC, ASIC — all restrict use of regulator logos in marketing; UCPD Annex I §4 (false trust marks)
 - **Severity:** FAIL
 - **Check:** Inspect the creative for: regulator logos (FCA, BaFin, MAS, SFC, FINRA, SEC, ESMA, EU flag implying regulatory blessing), "MiCA approved" / "FCA regulated" badges that aren't accurate, fake compliance/audit seals, third-party exchange or partner logos shown without active partnership, EU flag stylised as a certification mark. Regulators do not licence their logos to authorised firms; any regulator logo in a creative is a probable violation.
 - **Rewrite pattern:** Remove all regulator logos. Replace with precise plain-text status: *"[Entity] is authorised as a CASP under MiCA in [Member State], reg. no. [X]"* or *"[Entity] is registered with the FCA, FRN [X]"* (FCA permits the firm-reference-number text but not the logo). Remove third-party logos without partnership; if partnership is real, add a *"In partnership with [name]"* line under the logo with the agreement on file.
@@ -377,14 +377,14 @@ AUDIT-HISTORY ROW (JSON):
 date (the date of this run, ISO 8601):
 
 ```
-PROVENANCE: Ad Creative Compliance Pro v1.0.0 · 32 rules · MIT · northpoint.fi/skills/ad-creative?ref=audit-output · run {run date, YYYY-MM-DD}
+PROVENANCE: Ad Creative Compliance Pro v1.0.1 · 32 rules · MIT · northpoint.fi/skills/ad-creative?ref=audit-output · run {run date, YYYY-MM-DD}
 ```
 
 Any JSON rendering of this audit (an audit-history row, or the JSON above)
 carries one more top-level key, `provenance`, with the same fields:
 
 ```json
-"provenance": {"pack":"Ad Creative Compliance Pro","version":"1.0.0","rules":32,"license":"MIT","url":"https://northpoint.fi/skills/ad-creative?ref=audit-output","run":"{run date, YYYY-MM-DD}"}
+"provenance": {"pack":"Ad Creative Compliance Pro","version":"1.0.1","rules":32,"license":"MIT","url":"https://northpoint.fi/skills/ad-creative?ref=audit-output","run":"{run date, YYYY-MM-DD}"}
 ```
 
 A structured-output tool call (`submit_audit`) carries only the fields its

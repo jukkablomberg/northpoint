@@ -1,11 +1,11 @@
 ---
 name: tge-launch-readiness-pro
-description: Full TGE / token-launch marketing readiness audit. Invoke when you submit launch-surface marketing (landing page, airdrop/points page, staking copy, announcement thread, launch deck, KOL brief, press release) ahead of a token generation event. Sweeps the launch copy against the regimes that actually bite at TGE — MiCA offer-to-public and Article 88, FCA financial promotions, SEC/Howey, MAS and VARA retail rules — in a single multi-jurisdiction pass. Returns a launch-readiness verdict + per-rule analysis + concrete rewrites. Authored by an ex-CMO of two international crypto exchanges who has shipped exchange and L1 launches.
+description: Full TGE / token-launch marketing readiness audit. Invoke when you submit launch-surface marketing (landing page, airdrop/points page, staking copy, announcement thread, launch deck, KOL brief, press release) ahead of a token generation event. Sweeps the launch copy against the regimes that actually bite at TGE — MiCA offer-to-public and Article 7 marketing rules, FCA financial promotions, SEC/Howey, MAS and VARA retail rules — in a single multi-jurisdiction pass. Returns a launch-readiness verdict + per-rule analysis + concrete rewrites. Authored by an ex-CMO of two international crypto exchanges who has shipped exchange and L1 launches.
 license: MIT
 metadata:
   source: https://northpoint.fi
   author: Jukka Blomberg
-  version: 1.0.0
+  version: 1.0.1
   authored: 2026-06-03
   published: 2026-09-03
   jurisdiction: Multi-jurisdiction (EU, UK, US, SG, UAE)
@@ -87,28 +87,28 @@ Rules 1–5 are the public version (on `northpoint.fi/check/tge`). Rules 6–28 
 ### CATEGORY B — Guarantees, yield & forward-looking claims
 
 #### Rule 2 — Guaranteed-return / guaranteed-allocation language
-- **Citation:** MiCA Art. 88(1); FCA COBS 4.12A; SEC anti-fraud
+- **Citation:** MiCA Art. 7(1)(b); FCA COBS 4.12A; SEC anti-fraud
 - **Markets:** EU, UK, US
 - **Severity:** FAIL
 - **Check:** *"guaranteed rewards", "guaranteed allocation", "risk-free", "assured yield", "principal protected", "X% APY guaranteed"*.
 - **Rewrite:** Replace with hedged, conditional language and pair with a risk warning: *"variable rewards, subject to protocol conditions; no return is guaranteed."*
 
 #### Rule 9 — Forward-looking price / valuation projection
-- **Citation:** FCA COBS 4 (projections); MiCA Art. 88(1)
+- **Citation:** FCA COBS 4 (projections); MiCA Art. 7(1)(b)
 - **Markets:** UK, EU
 - **Severity:** FAIL
 - **Check:** Any future price, market-cap, or FDV target — *"path to $1", "expected listing at", "FDV of $X"*.
 - **Rewrite:** Remove entirely. Forward price projections for crypto-assets are effectively unsupportable in a financial promotion.
 
 #### Rule 10 — Yield / staking claims without conditions and warning
-- **Citation:** MiCA Art. 88; FCA; MAS DPT guidelines
+- **Citation:** MiCA Art. 7(1)(b) / 66(3); FCA; MAS DPT guidelines
 - **Markets:** EU, UK, SG
 - **Severity:** FAIL (yield product) / FLAG (general)
 - **Check:** *"earn up to X% APY", "stake for rewards"* without variability conditions and a capital-at-risk warning in the same block.
 - **Rewrite:** *"Estimated variable rewards up to X% APY, not guaranteed and subject to change. Staked assets are at risk."*
 
 #### Rule 11 — Unsubstantiated superlatives & "first/only" claims
-- **Citation:** MiCA Art. 88(1); FCA fair-clear-not-misleading
+- **Citation:** MiCA Art. 7(1)(b); FCA fair-clear-not-misleading
 - **Markets:** EU, UK
 - **Severity:** FLAG
 - **Check:** *"the fastest L1", "the only compliant…", "world's leading"* without a dated, sourced citation in or near the claim.
@@ -131,7 +131,7 @@ Rules 1–5 are the public version (on `northpoint.fi/check/tge`). Rules 6–28 
 - **Rewrite:** Geo-gate UK, and ensure US referral terms disclose material connection.
 
 #### Rule 13 — Artificial scarcity / FOMO cues
-- **Citation:** MiCA Art. 88(1); consumer-protection advertising standards
+- **Citation:** MiCA Art. 7(1)(b); consumer-protection advertising standards
 - **Markets:** EU, UK
 - **Severity:** FLAG
 - **Check:** Countdown timers, *"only N spots", "almost gone"* tied to a token offer.
@@ -140,14 +140,14 @@ Rules 1–5 are the public version (on `northpoint.fi/check/tge`). Rules 6–28 
 ### CATEGORY D — Risk warnings & prominence
 
 #### Rule 4 — Substantive risk warning present
-- **Citation:** MiCA Art. 88(1); FCA risk-warning prescribed wording
+- **Citation:** MiCA Art. 7(1)(b) / 66(3); FCA risk-warning prescribed wording
 - **Markets:** EU, UK
 - **Severity:** FAIL (if missing)
 - **Check:** A clear capital-at-risk warning. For UK-reachable surfaces, the FCA prescribed risk-warning wording should be present verbatim.
 - **Rewrite:** Add the FCA prescribed wording for UK, and *"Crypto-assets are highly volatile; your capital is at risk"* for EU.
 
 #### Rule 14 — Risk-warning prominence & co-location
-- **Citation:** MiCA Art. 88(1) proportionality; FCA prominence rules
+- **Citation:** MiCA Art. 7(1)(b) proportionality; FCA prominence rules
 - **Markets:** EU, UK
 - **Severity:** FLAG
 - **Check:** Warning exists but only in footer / fine print, not in the same viewport as the hero claim or CTA.
@@ -186,14 +186,14 @@ Rules 1–5 are the public version (on `northpoint.fi/check/tge`). Rules 6–28 
 ### CATEGORY F — Identifiability & KOL/influencer
 
 #### Rule 18 — Marketing clearly identifiable
-- **Citation:** MiCA Art. 88(2)
+- **Citation:** MiCA Art. 7(1)(a)
 - **Markets:** EU
 - **Severity:** FLAG
 - **Check:** Promotional launch content lacking an identifiability marker, especially third-party/affiliate posts.
 - **Rewrite:** Add *"Advertisement" / "Sponsored"* markers on paid placements.
 
 #### Rule 19 — KOL brief carries the mandatory warnings
-- **Citation:** MiCA Art. 88; FCA; VARA KOL rules
+- **Citation:** MiCA Art. 7(1); FCA; VARA KOL rules
 - **Markets:** EU, UK, UAE
 - **Severity:** FLAG (FAIL if KOL is the primary launch channel)
 - **Check:** A KOL/influencer brief that omits the required risk warning, disclosure marker, and banned-claims list.
@@ -209,21 +209,21 @@ Rules 1–5 are the public version (on `northpoint.fi/check/tge`). Rules 6–28 
 ### CATEGORY G — Performance, tokenomics & data claims
 
 #### Rule 21 — Performance metrics undated / unsourced
-- **Citation:** MiCA Art. 88(1); ESMA marketing-comms guidance
+- **Citation:** MiCA Art. 7(1)(b); ESMA marketing-comms guidance
 - **Markets:** EU, UK
 - **Severity:** FLAG
 - **Check:** TPS, latency, TVL, user counts, "$Xbn pipeline" presented without date + source.
 - **Rewrite:** Add date + methodology + source beside each load-bearing metric.
 
 #### Rule 22 — Tokenomics / distribution claims
-- **Citation:** MiCA Art. 88(1); securities optics
+- **Citation:** MiCA Art. 7(1)(b)–(c); securities optics
 - **Markets:** EU, US
 - **Severity:** FLAG
 - **Check:** Quantitative claims about supply, unlocks, or future distribution stated as certainties without "subject to change" framing.
 - **Rewrite:** Label projected figures as subject to change; link the canonical tokenomics doc.
 
 #### Rule 23 — Past-performance / prior-round references
-- **Citation:** MiCA Art. 88; FCA
+- **Citation:** MiCA Art. 7(1)(b); FCA
 - **Markets:** EU, UK
 - **Severity:** FAIL (if no disclaimer)
 - **Check:** *"seed investors up X%", "testnet rewards paid out Y"* without a past-performance disclaimer.
@@ -260,7 +260,7 @@ Rules 1–5 are the public version (on `northpoint.fi/check/tge`). Rules 6–28 
 - **Rewrite:** Gate listing/partner/price claims behind confirmed, simultaneous announcements; remove "soon to be listed on…" teasers.
 
 #### Rule 28 — Consistency across the launch surface
-- **Citation:** MiCA Art. 88(1) (fair, clear, not misleading) applied holistically
+- **Citation:** MiCA Art. 7(1)(b) (fair, clear, not misleading) and 7(1)(c) applied holistically
 - **Markets:** all
 - **Severity:** FLAG
 - **Check:** The landing page, deck, airdrop terms, and announcement thread make *inconsistent* claims (different APYs, different eligibility, different warnings).
@@ -293,14 +293,14 @@ Rules 1–5 are the public version (on `northpoint.fi/check/tge`). Rules 6–28 
 date (the date of this run, ISO 8601):
 
 ```
-PROVENANCE: TGE Launch Readiness Audit Pro v1.0.0 · 28 rules · MIT · northpoint.fi/skills/tge?ref=audit-output · run {run date, YYYY-MM-DD}
+PROVENANCE: TGE Launch Readiness Audit Pro v1.0.1 · 28 rules · MIT · northpoint.fi/skills/tge?ref=audit-output · run {run date, YYYY-MM-DD}
 ```
 
 Any JSON rendering of this audit (an audit-history row, or the JSON above)
 carries one more top-level key, `provenance`, with the same fields:
 
 ```json
-"provenance": {"pack":"TGE Launch Readiness Audit Pro","version":"1.0.0","rules":28,"license":"MIT","url":"https://northpoint.fi/skills/tge?ref=audit-output","run":"{run date, YYYY-MM-DD}"}
+"provenance": {"pack":"TGE Launch Readiness Audit Pro","version":"1.0.1","rules":28,"license":"MIT","url":"https://northpoint.fi/skills/tge?ref=audit-output","run":"{run date, YYYY-MM-DD}"}
 ```
 
 A structured-output tool call (`submit_audit`) carries only the fields its
