@@ -6,6 +6,8 @@ Twelve skills: the nine marketing-compliance rule packs NorthPoint built and ran
 
 Each skill is one `SKILL.md` — plain Markdown carrying the rules, the judgment notes and the output format. No code, no account, no runtime.
 
+> **Marketing skills live in [`jukkablomberg/marketingos`](https://github.com/jukkablomberg/marketingos)** — the marketing layer of Portfolio OS (job split, marketing check, AEO audit, competitor snapshot, weekly review). This repository is the compliance and crypto layer. The AEO audit moved there on 2026-11-09 as `aeo-visibility-audit`; `aeo-visibility-audit-pro` stays here until the public check at northpoint.fi/check/aeo repoints its pack link, then retires.
+
 ## Install
 
 Everything:
